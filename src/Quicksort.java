@@ -80,13 +80,13 @@ public class Quicksort {
         Integer[] a = {1,2,3,4,5,6,7,8,9,10};
         List<Integer> aList = Arrays.asList(a);
         Collections.shuffle(aList);
-        aList.toArray(a);
+        a = aList.toArray(a);
         Quicksort_pivotFirstElement(a,0,a.length);
         System.out.println(Arrays.toString(a));
         Integer[] b = {1,2,3,4,5,6,7,8,9,10};
         List<Integer> bList = Arrays.asList(a);
         Collections.shuffle(bList);
-        bList.toArray(b);
+        b = bList.toArray(b);
         Quicksort_pivotRandom(b,0,b.length);
         System.out.println(Arrays.toString(b));
     }
