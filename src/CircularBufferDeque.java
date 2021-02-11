@@ -16,7 +16,6 @@ public class CircularBufferDeque {
         return ((front == 0 && end == size-1) ||  front == end+1);
     }
 
-    // Checks whether Deque is empty or not.
     boolean isEmpty () {
         return (front == -1);
     }
@@ -77,7 +76,6 @@ public class CircularBufferDeque {
         return popped;
     }
 
-    // Delete element at rear end of Deque
     public int popEnd() {
         if (isEmpty()) {
             throw new ArrayIndexOutOfBoundsException();
